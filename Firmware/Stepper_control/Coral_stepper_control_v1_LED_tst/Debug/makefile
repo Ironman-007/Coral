@@ -60,8 +60,8 @@ all: main-build
 main-build: Coral_stepper_control_v1_LED_tst.elf secondary-outputs
 
 # Tool invocations
-Coral_stepper_control_v1_LED_tst.elf: $(OBJS) $(USER_OBJS) C:\DATA\Documents\Lab\github\Coral\Firmware\Stepper_control\Coral_stepper_control_v1_LED_tst\STM32F031F6PX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Coral_stepper_control_v1_LED_tst.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\DATA\Documents\Lab\github\Coral\Firmware\Stepper_control\Coral_stepper_control_v1_LED_tst\STM32F031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Coral_stepper_control_v1_LED_tst.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Coral_stepper_control_v1_LED_tst.elf: $(OBJS) $(USER_OBJS) /Users/liufangzheng/Documents/Lab/github/Coral/Firmware/Stepper_control/Coral_stepper_control_v1_LED_tst/STM32F031F6PX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Coral_stepper_control_v1_LED_tst.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"/Users/liufangzheng/Documents/Lab/github/Coral/Firmware/Stepper_control/Coral_stepper_control_v1_LED_tst/STM32F031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Coral_stepper_control_v1_LED_tst.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
