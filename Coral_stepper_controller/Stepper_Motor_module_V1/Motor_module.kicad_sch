@@ -2438,7 +2438,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 30bc4401-b4b1-4eb8-a246-5023f76549ec)
     (property "Reference" "U3" (id 0) (at 110.49 63.7372 0))
-    (property "Value" "" (id 1) (at 110.49 66.2741 0))
+    (property "Value" "THVD1439DR" (id 1) (at 110.49 66.2741 0))
     (property "Footprint" "Package_SO:PowerIntegrations_SO-8" (id 2) (at 110.49 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
